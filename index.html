@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" max-width=100%>
+    <title>ANUVA's</title>
+    
+  <style>
+     
+      body {        
+          width: 575px;         
+          background-image: linear-gradient(rgb(77, 25, 77),rgb(33, 47, 69),rgb(20, 69, 82),rgb(0, 100, 102));             
+          border-radius: 50px ;
+          padding: 2px 8px ;        
+          background-clip:border-box;
+          margin:auto;
+          font-family: 'Chicle',cursive;
+          font-size: 20px;        
+          user-select:none}
+      #section{
+          background:#BDB76B;  
+          box-shadow:15px 25px 30px 30px rgba(0, 0, 0, 0.2), 27px 35px 50px 50px rgba(0, 0, 0, 0.19);     
+          width:100%;
+          padding:10%;
+          border: 7px solid #BDB76B ;
+          border-radius:15px 50px;}
+   
+      input[type=text],[type=password] {
+          width:90%;          
+          border-radius:8px;
+          border:5px grey;
+          box-shadow:5px 5px 3px 2px rgba(75, 72, 72, 0.521);
+          padding:15px}
+      
+      input:hover {
+          background-color:rgb(0, 100, 102);
+          color: white;}
+
+      input[type=radio] {
+           text-align:center; }        
+
+      .a {
+          margin: 2px;
+          text-shadow: 5px 2px 2px bisque;
+          border: 0px;
+          border-radius:10px;         
+          text-align: center;
+          font-family: 'Fiesta'arial,sans-serif;
+          font-size: 20px;}
+
+         
+      select  {
+          color:black;
+          padding:5px;
+          font-size:16px;
+          border:8px black;
+          border-radius: 5px;
+          box-shadow:5px 5px 3px 2px rgba(75, 72, 72, 0.521);
+          position:relative;
+          display:inline-block;}
+
+      select:hover{
+          background-color: rgb(0, 100, 102) ;
+          color:white; }  
+
+      button {
+          background-color: white; 
+          box-shadow:5px 5px 3px 2px rgba(75, 72, 72, 0.521) ;
+          border-radius:5px;
+          border:2px white;
+          color: black;
+          padding: 16px 32px;
+          text-align: center;
+          font-family: 'Fiesta'arial,sans-serif;
+          font-size: 16px;
+          transition-duration: 0.3s;
+          cursor: pointer;}
+
+      .c{text-align:center;}  
+      .sendbtn:hover {
+          font-size: 16px;  
+          background-color:rgb(0, 100, 102);
+          color: white;}
+        
+  </style>
+  </head> 
+
+
+    <body>
+    <section id="section">
+      <div class="a"> 
+        <h1>SIGN UP FORM</h1>
+      </div>
+
+      
+      <form>
+        <label for="name">Name</label><br> 
+        <input type="text" placeholder="Enter Name" name="name" required ><br><br>
+        <label for="email">Email ID</label><br>
+        <input type="text" placeholder="Enter Email" name="email" required><br><br>
+        <label for="Address">Address</label><br>
+        <input type="text" placeholder="Address" required><br><br>
+        <label for="Phone No.">Phone No.</label><br>
+        <input type="text" placeholder="Phone No." required><br><br>
+     
+        &nbsp;&nbsp;&nbsp;<input type="radio" id="Hardware" name="domain" value="Hardware">&nbsp;
+        <label for="hardware">Hardware</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="Software" name="domain" value="Software">&nbsp;
+        <label for="Software">Software</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="Design" name="domain" value="Design">&nbsp;
+        <label for="Design">Design</label><br><br>
+
+        <div class="custom-select">
+          <label for="skill">Choose a skill:</label>
+          <select id="skill" name="skill">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Java">Java</option>    
+          </select>
+      </div> <br>
+          
+          
+      <div class="b">
+        <label for="pwd">Password</label><br> 
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <label for="cnf pwd">Confirm Password</label><br>
+        <input type="password" id="cnf pwd" name="cnf pwd">        
+      </div><br><br> 
+
+      <div class="c">
+        <button class="button sendbtn">Send</buttton>
+      </div>  
+      </form>
+    </section>
+
+
+    </body>
+</html>
